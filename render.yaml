@@ -1,7 +1,7 @@
 services:
   - type: web
     name: nexus-backend
-    runtime: native_executable
+    runtime: java
     buildCommand: ./mvnw clean package
     startCommand: java -jar target/api-0.0.1-SNAPSHOT.jar
     plan: free
